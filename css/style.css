@@ -341,7 +341,13 @@ footer {
 .footer_bottom p {
     padding-bottom: 30px;
 }
-
+.footer_bottom ul:nth-child(1) li{
+    opacity: 0.4;
+    transition: all 1s;
+}
+.footer_bottom ul:nth-child(1) li:hover{
+    opacity: 1;
+}
 
 @media (max-width : 1792px) {
     .con2_inner ul li {
