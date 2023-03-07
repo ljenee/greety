@@ -16,11 +16,11 @@ li {
     color: #329359;
     background-color: #ff8f3b;
 }
-
 body {
     font-size: 14px;
     font-family: 'Pretendard';
     line-height: 24px;
+   
 }
 
 /* header */
@@ -35,7 +35,8 @@ body {
     display: flex;
 }
 
-.header_inner>img {
+.header_inner>a>img {
+    display: inline-block;
     width: 120px;
     height: 100px;
     padding-left: 100px;
@@ -163,6 +164,7 @@ body {
     float: left;
     font-size: 18px;
     padding: 20px;
+    overflow: hidden;
 }
 
 .salad_but {

@@ -58,7 +58,7 @@ input[id="menuicon"]:checked+label span:nth-child(3) {bottom:50%;transform:trans
 .sidebar{
 	width:50%;
 	height:100%;
-	background:#ff8f3b;
+	background:#ff903bbb;
 	position:fixed;
 	top:0;
 	right:-100%;
@@ -96,6 +96,7 @@ input[id="menuicon"]:checked+label+div{
 	top: 0;
 	left: 0;
 	transition: all 0.7s;
+	z-index: 50;
 }
 
 /* 자바스크립트로 추가될 클래스 */
