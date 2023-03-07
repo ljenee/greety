@@ -269,6 +269,23 @@ body {
     box-sizing: border-box;
 }
 
+.con3 ul li a{
+    display: inline-block;
+    padding: 8px 30px;
+    margin-top: 20px;
+    font-size: 14px;
+    border: #fff 1px solid;
+    background-color: #fff;
+    border-radius: 50px;
+    color: #329359;
+    transition: all 1s;
+}
+.con3 ul li a:active{
+    transform: scale(0.8,0.8);
+}
+
+/* 인스타 */
+
 .insta {
     width: 90%;
     text-align: center;
@@ -284,6 +301,7 @@ body {
 
 .insta h1 {
     padding: 30px;
+    font-weight: 100;
 }
 
 .insta img {
