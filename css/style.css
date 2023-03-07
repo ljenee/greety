@@ -420,12 +420,16 @@ footer {
     .header_inner>img {
         padding-left: 0px;
     }
+        .insta h1{
+        font-size: 40px;
+    }
 }
 
 @media (max-width : 499px) {
     .con2_inner ul li{
         min-width: auto;
     }
+
 }
 
 /* 모바일 */
