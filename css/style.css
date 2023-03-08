@@ -16,11 +16,12 @@ li {
     color: #329359;
     background-color: #ff8f3b;
 }
+
 body {
     font-size: 14px;
     font-family: 'Pretendard';
     line-height: 24px;
-   
+
 }
 
 /* header */
@@ -84,19 +85,52 @@ body {
     margin: 100px auto;
 }
 
-.banner img:first-child {
+.banner div div img:first-child {
     display: block;
     width: 100%;
 }
 
-.banner img:nth-child(2) {
+.banner div div img:nth-child(2) {
     display: none;
     width: 100%;
 }
 
-.banner img:nth-child(3) {
+.banner div div img:nth-child(3) {
     display: none;
     width: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next {
+    color: #fff;
+}
+
+.swiper-button-prev {
+    color: #fff;
+}
+
+:root{
+    --swiper-theme-color:#fff
 }
 
 
@@ -271,7 +305,7 @@ body {
     box-sizing: border-box;
 }
 
-.con3 ul li a{
+.con3 ul li a {
     display: inline-block;
     padding: 8px 30px;
     margin-top: 20px;
@@ -282,8 +316,9 @@ body {
     color: #329359;
     transition: all 1s;
 }
-.con3 ul li a:active{
-    transform: scale(0.8,0.8);
+
+.con3 ul li a:active {
+    transform: scale(0.8, 0.8);
 }
 
 /* 인스타 */
@@ -361,11 +396,13 @@ footer {
 .footer_bottom p {
     padding-bottom: 30px;
 }
-.footer_bottom ul:nth-child(1) li{
+
+.footer_bottom ul:nth-child(1) li {
     opacity: 0.4;
     transition: all 1s;
 }
-.footer_bottom ul:nth-child(1) li:hover{
+
+.footer_bottom ul:nth-child(1) li:hover {
     opacity: 1;
 }
 
@@ -404,9 +441,9 @@ footer {
     }
 
     .con1 img {
-     width: 300px;
-     top: -170px;
-     left: 60%;
+        width: 300px;
+        top: -170px;
+        left: 60%;
     }
 }
 
@@ -415,11 +452,11 @@ footer {
 /* 태블릿 */
 
 @media (max-width : 899px) {
-    .banner img:nth-child(1) {
+    .banner div div img:nth-child(1) {
         display: none;
     }
 
-    .banner img:nth-child(2) {
+    .banner div div img:nth-child(2) {
         display: block;
     }
 
@@ -446,13 +483,14 @@ footer {
     .header_inner>img {
         padding-left: 0px;
     }
-        .insta h1{
+
+    .insta h1 {
         font-size: 40px;
     }
 }
 
 @media (max-width : 499px) {
-    .con2_inner ul li{
+    .con2_inner ul li {
         min-width: auto;
     }
 
@@ -461,15 +499,15 @@ footer {
 /* 모바일 */
 
 @media (max-width : 500px) {
-    .banner img:nth-child(1) {
+    .banner div div img:nth-child(1) {
         display: none;
     }
 
-    .banner img:nth-child(2) {
+    .banner div div img:nth-child(2) {
         display: none;
     }
 
-    .banner img:nth-child(3) {
+    .banner div div img:nth-child(3) {
         display: block;
     }
 
