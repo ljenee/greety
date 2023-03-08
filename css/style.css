@@ -429,6 +429,9 @@ footer {
         display: inline-block;
         text-align: center;
     }
+    .header_inner>a>img{
+        padding-left: 0;
+    }
 }
 
 /* web-tablet사이 */
