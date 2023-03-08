@@ -14,9 +14,10 @@
   <link rel="stylesheet" href="./font/web/static/pretendard.css">
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="./css/style.css">
-  
+
 </head>
 
 <body>
@@ -53,10 +54,28 @@
     </div>
   </header>
 
-  <div class="banner" data-aos="fade-down" data-aos-easing="ease-out-back">
-    <img src="./images/banner_web.jpg" alt="웹사이즈배너">
-    <img src="./images/banner_tablet.jpg" alt="태블릿사이즈배너">
-    <img src="./images/banner_mobile.jpg" alt="모바일사이즈배너">
+
+  <!-- Swiper -->
+  <div class="banner swiper mySwiper" data-aos="fade-down" data-aos-easing="ease-out-back">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./images/banner_web.jpg" alt="웹사이즈배너">
+        <img src="./images/banner_tablet.jpg" alt="태블릿사이즈배너">
+        <img src="./images/banner_mobile.jpg" alt="모바일사이즈배너">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/banner2_web.jpg" alt="웹사이즈배너">
+        <img src="./images/banner2_tablet.jpg" alt="태블릿사이즈배너">
+        <img src="./images/banner2_mobile.jpg" alt="모바일사이즈배너">
+      </div>
+      <!-- <div class="swiper-slide">Slide 3</div> -->
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="banner">
+
   </div>
 
   <div class="con1" data-aos="flip-down">
@@ -246,6 +265,30 @@
   <!-- js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
   <script src="./script/aos.js"></script><!-- aos 소스 -->
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>
